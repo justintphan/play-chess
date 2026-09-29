@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8DB062"/>
+      <stop offset="1" stop-color="#5B7A3C"/>
+    </linearGradient>
+    <clipPath id="tile"><rect width="512" height="512" rx="112"/></clipPath>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- faint board pattern -->
+  <g clip-path="url(#tile)" fill="#EEEED2" opacity="0.13">
+    <rect x="0" y="0" width="128" height="128"/><rect x="256" y="0" width="128" height="128"/>
+    <rect x="128" y="128" width="128" height="128"/><rect x="384" y="128" width="128" height="128"/>
+    <rect x="0" y="256" width="128" height="128"/><rect x="256" y="256" width="128" height="128"/>
+    <rect x="128" y="384" width="128" height="128"/><rect x="384" y="384" width="128" height="128"/>
+  </g>
+  <!-- king: soft shadow, then piece -->
+  <g transform="translate(10 14)" fill="#1E2A14" opacity="0.28">
+    <rect x="242" y="64" width="28" height="92" rx="7"/>
+    <rect x="212" y="92" width="88" height="28" rx="7"/>
+    <path d="M168 176 Q256 136 344 176 L316 258 L196 258 Z"/>
+    <rect x="182" y="254" width="148" height="30" rx="15"/>
+    <path d="M204 284 L308 284 L338 396 L174 396 Z"/>
+    <rect x="140" y="392" width="232" height="50" rx="20"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#262421" stroke-width="14" stroke-linejoin="round">
+    <path d="M242 64 h28 v28 h23 a7 7 0 0 1 7 7 v14 a7 7 0 0 1 -7 7 h-23 v36 h-28 v-36 h-23 a7 7 0 0 1 -7 -7 v-14 a7 7 0 0 1 7 -7 h23 z"/>
+    <path d="M168 176 Q256 136 344 176 L316 258 L196 258 Z"/>
+    <path d="M204 284 L308 284 L338 396 L174 396 Z"/>
+    <rect x="182" y="254" width="148" height="30" rx="15"/>
+    <rect x="140" y="392" width="232" height="50" rx="20"/>
+  </g>
+  <!-- crown band detail -->
+  <path d="M196 216 Q256 198 316 216" fill="none" stroke="#262421" stroke-width="10" stroke-linecap="round"/>
+</svg>
